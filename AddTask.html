@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AddTask</title>
+  <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <a href="home.html"> <img class="close" src="close.png"></img> </a>
+  <input type="text" name="text" class="task-add" placeholder="Add task" id="taskid" />
+  <div class="mainAddTask">
+    <div>
+      <label>Choose date</label>
+      <div class="choose" class="bold">
+        <input type="date" class="bold" name="date" id="role1" src="arrow-down.png" />
+      </div>
+    </div>
+    <div>
+      <div>
+        <label>Choose time</label>
+        <div class="choose" class="bold">
+          <input type="time" class="bold" name="time1" id="role2" src="arrow-down.png">
+          <input type="time" class="bold" name="time2" id="role3" src="arrow-down.png">
+        </div>
+      </div>
+      <div class="chooseform">
+        <label>Choose task type</label>
+        <div class="taskType">
+          <input type="radio" value="works" class="btn-check" name="category" id="works" autocomplete="off">
+          <label class="work" for="works">work</label>
+          <input type="radio" class="btn-check" name="category" id="Personal" autocomplete="off" value="Personal">
+          <label class="personal" for="Personal">Personal</label>
+          <input value="shoppings" type="radio" class="btn-check" name="category" id="shoppings" autocomplete="off">
+          <label class="shopping" for="shoppings">Shopping</label>
+        </div>
+        <div class="taskType">
+          <input value="healths" type="radio" class="btn-check" name="category" id="healths" autocomplete="off">
+          <label class="health" type="radio" for="healths">Health</label>
+          <input value="others" type="radio" class="btn-check" name="category" id="others" autocomplete="off">
+          <label class="Others" type="radio" for="others">Other</di>
+        </div>
+      </div>
+      <div class="descript">
+        <p>Write description</p>
+        <input name="desc" type="text" class="des" placeholder="Description" />
+      </div>
+    </div>
+    <div class="lineAdd"></div>
+    <button type="submit" class="Add" value="save" id="mybtn" onclick="submit_comfirm()">add task</button>
+    <script src="save.js "></script>
+</body>
+
+</html>

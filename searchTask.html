@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SearchTask</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+ 
+  <div class="closeflex">
+    <button onclick="remove_btn()" class="close2" src="close.png"></button>
+    <input value="" id="search" type="text" class="task-search" placeholder="Search task" />
+    <button onclick="search_items()" id="searchicon" class="search"></button>
+    <a href="home.html"> <p>HOME</p> </a>
+  </div>
+  <div class="mainsearch">
+    <ul id="task_list" class="ulnone">
+      <li>
+        <div class="task-click">
+          <p class="task-title">Daily UI Challenge</p>
+          <p>Create To - Do List</p>
+          <div class="dot-white"></div>
+          <button class="edit" src="edit.png"></button>
+        </div>
+      </li>
+      <li>
+        <div class="task-click">
+          <p class="task-title">Do yoga</p>
+          <p>15 minutes</p>
+          <div class="dot-red"></div>
+          <button class="edit" src="edit.png"></button>
+        </div>
+      </li>
+      <li>
+        <div class="task-click">
+          <p class="task-title">Lunch</p>
+          <p>Buy salad</p>
+          <div class="dot-purple"></div>
+          <button class="edit" src="edit.png"></button>
+        </div>
+      </li>
+      </li>
+      <div class="task-click">
+        <p class="task-title">Lunch</p>
+        <p>Make salad</p>
+        <div class="dot-blue"></div>
+        <button class="edit" src="edit.png"></button>
+      </div>
+      </li>
+      </li>
+      <div class="task-click">
+        <p class="task-title">Lunch</p>
+        <p>Make salad</p>
+        <div class="dot-blue"></div>
+        <button class="edit" src="edit.png"></button>
+      </div>
+      </li>
+
+      </li>
+      <div class="task-click">
+        <p class="task-title">Lunch</p>
+        <p>Make salad</p>
+        <div class="dot-blue"></div>
+        <button class="edit" src="edit.png"></button>
+      </div>
+      </li>
+      </li>
+      <div class="task-click">
+        <p class="task-title">Lunch</p>
+        <p>Make salad</p>
+        <div class="dot-blue"></div>
+        <button class="edit" src="edit.png"></button>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="list.js"></script>
+
+</body>
+
+</html>

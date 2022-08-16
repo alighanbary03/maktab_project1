@@ -1,0 +1,535 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.maincard {
+  margin-top: 50px;
+  height: auto;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* .mainbranch {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+} */
+
+.plus {
+  background: url("plus.png") no-repeat scroll 12px 12px transparent;
+  background-size: 40%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(210, 47, 74, 0.973);
+  border-style: none;
+  border-radius: 10%;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.status {
+  display: flex;
+  gap: 40px;
+}
+
+.sectiontwo {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.line {
+  width: 100%;
+  background-color: rgb(192, 187, 187);
+  height: 2px;
+  margin-top: 10px;
+  z-index: -1;
+  position: absolute;
+  left: 50px;
+}
+
+.status-task {
+  display: flex;
+  gap: 40px;
+  margin-top: 18px;
+}
+
+.flexline {
+  display: flex;
+  gap: 5px;
+}
+
+.box {
+  width: 30%;
+  box-shadow: 2px 2px 2px 2px rgb(192, 187, 187);
+  padding: 15px;
+  border-radius: 5%;
+  position: relative;
+}
+
+.dot-blue {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(37, 58, 246);
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.dot-purple {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(246, 37, 215);
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.dot-red {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(205, 49, 49);
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.dot-green {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(24, 213, 62);
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.dot-pink {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(227, 117, 179);
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.time {
+  display: flex;
+  position: relative;
+}
+
+.task {
+  margin-top: 22px;
+  width: 70%;
+  box-shadow: 2px 2px 2px 2px rgb(192, 187, 187);
+  padding: 20px;
+  border-radius: 3%;
+  position: relative;
+  margin-left: 20px;
+  height: 70%;
+  z-index: 2;
+  padding: 10px;
+}
+
+.task1 {
+  margin-top: 22px;
+  width: 70%;
+  box-shadow: 2px 2px 2px 2px rgb(192, 187, 187);
+  padding: 10px;
+  border-radius: 3%;
+  position: relative;
+  margin-left: 20px;
+  height: 70%;
+  z-index: 2;
+}
+
+.cullumms {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 25px;
+}
+
+.container {
+  margin-left: 5px;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.category {
+  font-weight: bold;
+}
+
+.task-title {
+  font-weight: bold;
+}
+
+#blue-task {
+  background-color: rgb(22, 182, 240);
+  color: aliceblue;
+}
+
+.dot-white {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(239, 233, 233);
+  border-radius: 100%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.hour {
+  position: absolute;
+  left: -55px;
+}
+
+.arrowLeft {
+  background: url("arrow-left.png") no-repeat scroll 12px 12px transparent;
+  background-size: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  border-radius: 10%;
+  margin-top: 40px;
+  display: block;
+  cursor: pointer;
+}
+
+.mainAddTask {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.choose {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.arrow-down {
+  margin-left: 100px;
+  background: url("arrow-down.png") no-repeat scroll transparent;
+  background-size: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.taskType {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.descript {
+  margin-top: 15px;
+}
+
+.inputdes {
+  margin-top: 15px;
+}
+
+.task-add {
+  border-style: none;
+  box-shadow: none;
+  font-size: 25px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 15px;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+}
+
+.work {
+  background-color: blue;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.des {
+  border-style: none;
+  box-shadow: none;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.personal {
+  background-color: rgb(25, 201, 169);
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.shopping {
+  background-color: rgb(145, 25, 201);
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.health {
+  background-color: rgb(201, 25, 75);
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.Others {
+  background-color: rgb(197, 17, 217);
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.lineAdd {
+  width: 100%;
+  background-color: rgb(192, 187, 187);
+  height: 2px;
+  margin-top: 120px;
+  z-index: -1;
+  position: absolute;
+  left: 50px;
+}
+
+.Add {
+  background-color: rgb(128, 131, 135);
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  color: aliceblue;
+  border-radius: 10px;
+  margin-top: 200px;
+  border-style: none;
+  font-size: 20px;
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+}
+
+.close {
+  background: url("close.png") no-repeat scroll transparent;
+  background-size: 40%;
+  width: 20px;
+  height: 20px;
+  border-style: none;
+  border-radius: 20%;
+  margin-top: 25px;
+  margin-left: 65px;
+  cursor: pointer;
+}
+
+.closeflex {
+  display: flex;
+  gap: 40px;
+}
+
+.task-search {
+  border-style: none;
+  box-shadow: none;
+  font-size: 25px;
+  width: 150px;
+  margin-left: 50px;
+}
+
+.mainsearch {
+  margin-top: 20px;
+  width: 500px;
+}
+
+.search {
+  background: url("search.png") no-repeat scroll transparent;
+  background-size: 40%;
+  width: 60px;
+  height: 60px;
+  border-style: none;
+  border-radius: 10%;
+  margin-top: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ulnone {
+  list-style: none;
+}
+
+.edit {
+  background: url("edit.png") no-repeat scroll transparent;
+  background-size: 40%;
+  width: 60px;
+  height: 60px;
+  border-style: none;
+  border-radius: 10%;
+  margin-top: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.task-click {
+  margin-top: 22px;
+  width: 70%;
+  box-shadow: 2px 2px 2px 2px rgb(192, 187, 187);
+  padding: 20px;
+  border-radius: 3%;
+  position: relative;
+  margin-left: 20px;
+  height: 70%;
+  z-index: 2;
+  padding: 10px;
+}
+
+/* .task-click:hover::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: center;
+  width: 20%;
+  border-radius: 3%;
+  align-content: center;
+  height: 125px;
+  padding: 10px;
+  content: url(trash.png);
+  background-color: rgb(163, 14, 69);
+} */
+
+/* .task-click:hover {
+  background-color: rgb(217, 107, 147);
+} */
+
+/* .ddd {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+} */
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+.work:hover {
+  box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+}
+
+.personal:hover {
+  box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+}
+
+.shopping:hover {
+  box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+}
+
+.Others:hover {
+  box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+}
+
+.health:hover {
+  box-shadow: 2px 2px 2px 2px rgb(73, 71, 71);
+}
+
+.task-click:hover {
+  background-color: rgb(195, 60, 109);
+  position: relative;
+  color: rgb(195, 60, 109);
+}
+
+.trash,
+.img2 {
+  border: none;
+  background-color: rgb(156, 38, 38);
+  visibility: hidden;
+  height: 50px;
+}
+
+li:hover .img2 {
+  visibility: visible;
+}
+
+li:hover .trash {
+  position: absolute;
+
+  right: 0;
+
+  cursor: pointer;
+}
+
+.del {
+  visibility: hidden;
+}
+
+.time2 {
+  display: block;
+}
+
+.task2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 70%;
+  box-shadow: 2px 2px 2px 2px rgb(192, 187, 187);
+  padding: 20px;
+  border-radius: 3%;
+  position: relative;
+  margin-left: 60px;
+  height: 10%;
+  z-index: 2;
+  right: 10px;
+}
+
+.close2 {
+  background: url("close.png") no-repeat scroll transparent;
+  background-size: 40%;
+  width: 70px;
+  height: 70px;
+  border-style: none;
+
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
