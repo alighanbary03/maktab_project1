@@ -75,7 +75,7 @@ function search_items() {
   const input = document.getElementById("search");
   const value = input.value; // test
   list_of_match = find_tasks(value);
-  set_taks_result(list_of_match);
+  set_result(list_of_match);
 }
 
 function find_tasks(value) {
@@ -94,10 +94,8 @@ function find_tasks(value) {
   return filter_task;
 }
 
-function set_taks_result(list_of_match) {
-  // this function just send the match items into dom
+function set_result(list_of_match) {
   const task_list = document.querySelector("#task_list");
-  // we clear innerhtml to remove last items
   task_list.innerHTML = "";
   append_tasks_list1(list_of_match);
 }
