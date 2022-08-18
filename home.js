@@ -9,7 +9,7 @@ const task_color = {
 window.onload = () => {
   tasks = JSON.parse(localStorage.getItem("todos"));
   append_tasks_list2(tasks);
-  const box = document.getElementsByClassName("time");
+  const box = document.getElementsByClassName("time2");
   const directChildren = box.length;
   console.log(directChildren);
   left_today.textContent = `Today you have ${directChildren} tasks`;
