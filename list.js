@@ -30,11 +30,7 @@ function createelement1(index, task) {
       <button class="edit" src="edit.png"></button>
       <butto  value="${index}" id="${index}" class="trash" href="script3.js" onclick="delete_task(${index})" > <img src="trash.png"  class="img2"  /> </button></div>
     </div>
-    </div>
-                   <div class="del"> 
-                   ss="del">Daily Ui challenge</h5>
-                   <p class="del"> create To-Do list app</p>
-                   </div> `;
+    </div> `;
   return node;
 }
 console.log("hi");
