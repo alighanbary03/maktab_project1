@@ -1,4 +1,4 @@
-let count = 0;
+// let count = 0;
 function savestroge(todo) {
   let todos;
   if (localStorage.getItem("todos") === null) {

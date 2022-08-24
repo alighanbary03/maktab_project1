@@ -126,21 +126,21 @@ function remove_butten() {
   input.value = "";
   const value = input.value;
   list_of_match = find_tasks(value);
-  set_taks_result(list_of_match);
+  set_result(list_of_match);
 }
 
 // let toopi = document.getElementById("searchicon");
 
-let sol = document.querySelector(".task-click");
-top.addEventListener("click", function () {
-  sol.style.visibility = "hidden";
-});
+// let sol = document.querySelector(".task-click");
+// top.addEventListener("click", function () {
+//   sol.style.visibility = "hidden";
+// });
 
-function del(Element, value) {
-  console.log(Element.parentNode);
-  Element.parentNode.remove();
-  localStorage.removeItem(`todos${value}`);
-}
+// function del(Element, value) {
+//   console.log(Element.parentNode);
+//   Element.parentNode.remove();
+//   localStorage.removeItem(`todos${value}`);
+// }
 
 function remove_btn() {
   const input = document.getElementById("search");
